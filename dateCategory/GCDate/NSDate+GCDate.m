@@ -24,11 +24,11 @@
     if (difference >= year) {
         return [self convertUnixTime:timestamp timeType:1];
     } else if (difference >= day) {
-        return [NSString stringWithFormat:@"%ld天前",difference/day];
+        return [NSString stringWithFormat:@"%zd天前",difference/day];
     } else if (difference >= hour) {
-        return [NSString stringWithFormat:@"%ld小时前",difference/hour];
+        return [NSString stringWithFormat:@"%zd小时前",difference/hour];
     } else if (difference >= minute*5) {
-        return [NSString stringWithFormat:@"%ld分钟前",difference/minute];
+        return [NSString stringWithFormat:@"%zd分钟前",difference/minute];
     } else {
         return @"刚刚";
     }
@@ -91,7 +91,7 @@
 }
 
 +(NSString* )getDateString:(NSDate *)date{
-    return  [NSString stringWithFormat:@"%ld",[self getDateInteger:date]];
+    return  [NSString stringWithFormat:@"%zd",[self getDateInteger:date]];
 }
 
 
