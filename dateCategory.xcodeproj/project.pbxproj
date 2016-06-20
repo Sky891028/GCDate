@@ -15,7 +15,7 @@
 		33543F8E1D17787A00E51554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33543F8C1D17787A00E51554 /* LaunchScreen.storyboard */; };
 		33543F991D17787A00E51554 /* dateCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33543F981D17787A00E51554 /* dateCategoryTests.m */; };
 		33543FA41D17787A00E51554 /* dateCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33543FA31D17787A00E51554 /* dateCategoryUITests.m */; };
-		33543FB71D1778D300E51554 /* NSDate+GCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33543FB61D1778D300E51554 /* NSDate+GCDate.m */; };
+		33BDFF4E1D17D6FF0000158D /* NSDate+GCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BDFF4D1D17D6FF0000158D /* NSDate+GCDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		33543F9F1D17787A00E51554 /* dateCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dateCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33543FA31D17787A00E51554 /* dateCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dateCategoryUITests.m; sourceTree = "<group>"; };
 		33543FA51D17787A00E51554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33543FB51D1778D300E51554 /* NSDate+GCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GCDate.h"; sourceTree = "<group>"; };
-		33543FB61D1778D300E51554 /* NSDate+GCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GCDate.m"; sourceTree = "<group>"; };
+		33BDFF4C1D17D6FF0000158D /* NSDate+GCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GCDate.h"; sourceTree = "<group>"; };
+		33BDFF4D1D17D6FF0000158D /* NSDate+GCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GCDate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		33543F7D1D17787A00E51554 /* dateCategory */ = {
 			isa = PBXGroup;
 			children = (
-				33543FB41D1778D300E51554 /* GCDate */,
+				33BDFF4B1D17D6FF0000158D /* GCDate */,
 				33543F811D17787A00E51554 /* AppDelegate.h */,
 				33543F821D17787A00E51554 /* AppDelegate.m */,
 				33543F841D17787A00E51554 /* ViewController.h */,
@@ -144,11 +144,11 @@
 			path = dateCategoryUITests;
 			sourceTree = "<group>";
 		};
-		33543FB41D1778D300E51554 /* GCDate */ = {
+		33BDFF4B1D17D6FF0000158D /* GCDate */ = {
 			isa = PBXGroup;
 			children = (
-				33543FB51D1778D300E51554 /* NSDate+GCDate.h */,
-				33543FB61D1778D300E51554 /* NSDate+GCDate.m */,
+				33BDFF4C1D17D6FF0000158D /* NSDate+GCDate.h */,
+				33BDFF4D1D17D6FF0000158D /* NSDate+GCDate.m */,
 			);
 			path = GCDate;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33543FB71D1778D300E51554 /* NSDate+GCDate.m in Sources */,
+				33BDFF4E1D17D6FF0000158D /* NSDate+GCDate.m in Sources */,
 				33543F861D17787A00E51554 /* ViewController.m in Sources */,
 				33543F831D17787A00E51554 /* AppDelegate.m in Sources */,
 				33543F801D17787A00E51554 /* main.m in Sources */,
@@ -510,6 +510,7 @@
 				33543FAA1D17787A00E51554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33543FAB1D17787A00E51554 /* Build configuration list for PBXNativeTarget "dateCategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				33543FAD1D17787A00E51554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33543FAE1D17787A00E51554 /* Build configuration list for PBXNativeTarget "dateCategoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				33543FB01D17787A00E51554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
