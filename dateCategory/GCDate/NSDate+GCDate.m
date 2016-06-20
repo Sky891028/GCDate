@@ -13,22 +13,22 @@
 +(NSString *)ttimeUptoNowFrom:(NSInteger)timestamp
 {
     NSDate *nowDate = [NSDate date];
-    NSInteger nowTimestamp = [nowDate timeIntervalSince1970];
-    NSInteger second = 1;
-    NSInteger minute = second * 60;
-    NSInteger hour   = minute * 60;
-    NSInteger day    = hour   * 24;
-    NSInteger month  = day    * 30;
-    NSInteger year   = month  * 12;
-    NSInteger difference = nowTimestamp - timestamp;
+    NSUInteger nowTimestamp = [nowDate timeIntervalSince1970];
+    NSUInteger second = 1;
+    NSUInteger minute = second * 60;
+    NSUInteger hour   = minute * 60;
+    NSUInteger day    = hour   * 24;
+    NSUInteger month  = day    * 30;
+    NSUInteger year   = month  * 12;
+    NSUInteger difference = nowTimestamp - timestamp;
     if (difference >= year) {
         return [self convertUnixTime:timestamp timeType:1];
     } else if (difference >= day) {
-        return [NSString stringWithFormat:@"%zd天前",difference/day];
+        return [NSString stringWithFormat:@"%zi天前",difference/day];
     } else if (difference >= hour) {
-        return [NSString stringWithFormat:@"%zd小时前",difference/hour];
+        return [NSString stringWithFormat:@"%zi小时前",difference/hour];
     } else if (difference >= minute*5) {
-        return [NSString stringWithFormat:@"%zd分钟前",difference/minute];
+        return [NSString stringWithFormat:@"%zi分钟前",difference/minute];
     } else {
         return @"刚刚";
     }
@@ -91,7 +91,7 @@
 }
 
 +(NSString* )getDateString:(NSDate *)date{
-    return  [NSString stringWithFormat:@"%zd",[self getDateInteger:date]];
+    return  [NSString stringWithFormat:@"%zi",[self getDateInteger:date]];
 }
 
 
